@@ -1353,13 +1353,10 @@ button.alt:hover,
 }
 
 /* Lattice Grid in My Work */
-.container-work {
-	border: 3px solid green;
+.grid-container {
 	display: flex;
 	flex-direction: column;
-
-}
-
-.grid-container {
+	justify-content: center;
+	align-items: center;
 	border: 3px solid red;
 }
