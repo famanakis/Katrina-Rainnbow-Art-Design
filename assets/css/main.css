@@ -22,7 +22,7 @@
 	box-sizing: border-box;
 }
 
-footer, header, nav, section {
+footer, header, section {
 	display: block;
 }
 
@@ -123,9 +123,9 @@ a {
 	border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
 }
 
-	a:hover {
-		border-bottom-color: rgba(0, 0, 0, 0);
-	}
+a:hover {
+	border-bottom-color: rgba(0, 0, 0, 0);
+}
 
 .dark a {
 	color: #fff;
@@ -192,9 +192,40 @@ br.clear {
 	text-align: center;
 }
 
-	.featured p {
-		text-align: center;
+.featured p {
+	text-align: center;
+}
+
+/* Navigation Bar */
+.nav-bar {
+	display: none;
+}
+
+@media screen and (min-width: 1000px) {
+	.nav-bar{
+		display: flex;
+		justify-content: space-between;
+		padding: .5em 1em 0em;
 	}
+
+	.nav-list {
+		display: flex;
+	}
+
+	.nav-bar ul {
+		list-style-type: none;
+	}
+
+	.nav-list li {
+		padding: 0 .75em;
+	}
+
+	.nav-list a {
+		text-decoration: none;
+		border-bottom: none;
+	}
+
+}
 
 /* Container */
 
@@ -204,7 +235,7 @@ br.clear {
 	width: 1360px;
 }
 
-.container-about-portrait {
+.container-flex {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -212,7 +243,26 @@ br.clear {
 	padding: 1em;
 }
 
-.container-about-portrait img {
+#third .container-flex {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 10em;
+}
+
+.aicher-quote {
+	text-align: center;
+}
+
+.events {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+.container-flex img {
 	width: calc(610*.55px);
 	height: calc(1098*.55px);
 }
@@ -251,18 +301,20 @@ br.clear {
 		width: 100% !important;
 	}
 
-	.container-about-portrait {
+	.container-flex {
 		display: flex;
 		flex-direction: column;
 		gap: 2em;
-		padding: 1em;
 	}
 
-	.container-about-portrait img {
+	.container-flex img {
 		width: calc(610*.6px);
 		height: calc(1098*.6px);
 	}
 
+	#third .container-flex {
+		gap: 1em;
+	}
 }
 
 /* Row */
@@ -281,16 +333,8 @@ br.clear {
 	padding: 50px 0 0 50px;
 }
 
-.row > .col-4 {
-	width: 33.33333%;
-}
-
 .row > .col-6 {
 	width: 50%;
-}
-
-.row > .col-8 {
-	width: 66.66667%;
 }
 
 .row > .col-12 {
@@ -996,11 +1040,15 @@ button.alt:hover,
 
 #header {
 	position: relative;
+	
 	margin: 0;
-	background-image: url("images/overlay.png"), url("../../images/Desk-Background.jpg");
-	background-size: auto, cover;
-	background-position: top left, center center;
-	background-repeat: repeat, no-repeat;
+	background-image: 
+        linear-gradient(rgba(0, 70, 255, 0.1), rgba(0, 70, 255, 0.1)), 
+        url("images/overlay.png"), 
+        url("../../images/Desk-Background.jpg");
+	background-size: cover, auto, cover;
+	background-position: top left, top left, center center;
+	background-repeat: no-repeat, repeat, no-repeat;
 	padding: 14em 0 14em 0;
 	text-align: center;
 	color: #fff;
@@ -1302,4 +1350,16 @@ button.alt:hover,
 			font-size: 1.25em;
 		}
 
+}
+
+/* Lattice Grid in My Work */
+.container-work {
+	border: 3px solid green;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.grid-container {
+	border: 3px solid red;
 }

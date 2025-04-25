@@ -16,24 +16,26 @@
 	</head>
 	<main class="is-preload">
 		<!-- Navigation -->
-		 <!-- <nav>
+		 <nav class="nav-bar">
 			<p>Logo Here</p>
-			<ul>
+			<ul class="nav-list">
 				<li><a href="#first">About</a></li>
 				<li><a href="#second">My Work</a></li>
 				<li><a href="#third">Design Philosophy</a></li>
 				<li><a href="#fourth">Contact</a></li>
 			</ul>
-		 </nav> -->
+		 </nav>
 
 		<!-- Hero -->
 			<section id="header" class="dark">
-				<div class="header">
-					<h1>Rainbow Art & Design</h1>
-					<p>~ graphic designer & artist ~</a></p>
-				</div>
-				<div>
-					<a href="#first" class="button scrolly" aria-label="down to first section"><i class="fa-solid fa fa-chevron-down"></i></a>
+				<div class="hero">
+					<div class="header">
+						<h1>Rainbow Art & Design</h1>
+						<p>~ graphic designer & artist ~</a></p>
+					</div>
+					<div>
+						<a href="#first" class="button scrolly" aria-label="down to first section"><i class="fa-solid fa fa-chevron-down"></i></a>
+					</div>
 				</div>
 			</section>
 
@@ -41,12 +43,12 @@
 			<section id="first" class="main">
 				<div class="header">
 					<div class="container">
-						<h2>~ Good Art Inspires</h2>
+						<h2>~ Good Art Inspires ~</h2>
 					</div>
 				</div>
 				<div class="content dark style1 featured">
 					<div class="container">
-						<div class="container-about-portrait">
+						<div class="container-flex">
 							<div>
 								<img src="images/Portrait.png" alt="hand drawing portrait of woman and cat">
 							</div>
@@ -57,7 +59,7 @@
 								<div>
 									<p>As a passionate artist and graphic designer with a Multimedia Graphic Design degree, I’m dedicated to transforming the world through vibrant, innovative art. Originally from Colorado, I’ve recently embraced New Mexico’s creative spirit to fuel my print-on-demand business, showcasing unique designs on Etsy and at local Albuquerque markets. Driven by a vision to explore the world, I craft art inspired by diverse experiences, aiming to captivate and inspire. Discover my work and join my journey to redefine creativity.</p>	
 								</div>
-								<div class="col-12">
+								<div class="">
 									<div class="footer">
 										<a href="#second" class="button scrolly">Go to my Work</a>
 									</div>
@@ -72,23 +74,28 @@
 			<section id="second" class="main">
 				<div class="header">
 					<div class="container">
-						<h2>~ Good Design Motivates</h2>
+						<h2>~ Good Design Motivates ~</h2>
 					</div>
 				</div>
 				<div class="content dark style2">
 					<div class="container">
-						<div class="col-4 col-12-narrow">
+						<div class="">
 							<h3>My Work</h3>
 						</div>	
 						<div class="row">
-							<div class="col-8 col-12-narrow">
-								<div class="row">
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
+							<div class="">
+								<div class="row lattice-container">
+									<div class="grid-container">
+										<div class="grid-item"><img src="images/pic01.jpg" alt="Image 1"></div>
+										<div class="grid-item"><img src="images/pic02.jpg" alt="Image 2"></div>
+										<div class="grid-item"><img src="images/pic03.jpg" alt="Image 3"></div>
+										<div class="grid-item"><img src="images/pic04.jpg" alt="Image 4"></div>
+										<div class="grid-item"><img src="images/pic05.jpg" alt="Image 5"></div>
+										<div class="grid-item"><img src="images/pic01.jpg" alt="Image 6"></div>
+										<div class="grid-item"><img src="images/pic02.jpg" alt="Image 7"></div>
+										<div class="grid-item"><img src="images/pic03.jpg" alt="Image 8"></div>
+										<div class="grid-item"><img src="images/pic04.jpg" alt="Image 9"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -103,17 +110,23 @@
 			<section id="third" class="main">
 				<div class="header">
 					<div class="container">
-						<h2>~ Innovation at Your Fingertips</h2>
+						<h2>~ Innovation at Your Fingertips ~</h2>
 					</div>
 				</div>
 				<div class="content dark style3">
 					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-narrow">
+						<div class="container-flex row">
+							<div>
 								<h3>My Philosophy</h3>
-								<p>"Good art inspires, while good design motivates ~ Otl Aicher"</p>
+								<p class="aicher-quote">"Good art inspires,<br> while good design motivates"<br> ~ Otl Aicher</p>
 							</div>
-							<div class="col-4 col-12-narrow">
+							<div>
+								<h3>Upcoming Events</h3>
+								<div class="events">
+									<a href="">upcoming streetfair</a>
+									<a href="">upcoming art around the block</a>
+									<br>
+								</div>
 								<div class="footer">
 									<a href="#fourth" class="button scrolly">Let's Work Together</a>
 								</div>
@@ -132,12 +145,12 @@
 						<p>I appreciate any possible opportunities to collaborate with you on a new project.</p>
 					</div>
 				</div>
-				<div class="content style4 featured">
-					<div class="container medium">
+				<div class="content featured">
+					<div class="container">
 						<form method="post" action="#">
-							<div class="row gtr-50">
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
+							<div class="row">
+								<div class="col-6"><input type="text" placeholder="Name" /></div>
+								<div class="col-6"><input type="text" placeholder="Email" /></div>
 								<div class="col-12"><textarea name="message" placeholder="Message"></textarea></div>
 								<div class="col-12">
 									<ul class="actions special">
