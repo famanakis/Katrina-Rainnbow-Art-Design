@@ -19,15 +19,11 @@
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 footer, header, nav, section {
 	display: block;
-}
-
-html {
-	box-sizing: border-box;
 }
 
 body {
