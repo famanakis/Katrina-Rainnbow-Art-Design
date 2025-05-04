@@ -375,7 +375,7 @@ button, .btn {
 	padding: 2em;
 }
 
-.contact-btns {
+.contact-btns, .contact-name-email {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
@@ -437,7 +437,7 @@ form textarea {
 	position: relative;
 	margin: 0;
 	text-align: center;
-	padding: 4em 0 8em 0;
+	padding: 4em 0;
 	box-shadow: inset 0 1px 0 0 #e6e6e6;
 	background: #09008a;
 	background: radial-gradient(circle,rgba(9, 0, 138, 1) 0%, rgba(82, 69, 230, 1) 48%, rgba(236, 28, 255, 1) 100%);
@@ -537,8 +537,37 @@ form textarea {
 		margin: 2em 0 2em 4em;
 	}
 
-	#events .container-flex {
-		gap: 1em;
+	.events-content {
+		padding: 5em 0;
+	}
+
+	.events-menu {
+		display: flex;
+		flex-direction: row;
+		gap: 10em;
+	}
+
+	.contact-form {
+		margin: 0 auto;
+		width: 80%;
+		gap: 2em;
+	}
+
+	.contact-btns, .contact-name-email {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.name, .email {
+		width: 100%;
+	}
+
+	.contact-btns {
+		gap: 2em;
+	}
+
+	.submit, .clear {
+		width: 300px;
 	}
 }
 
@@ -548,9 +577,6 @@ form textarea {
 		width: 960px;
 	}
 
-	.container.medium {
-		width: 720px;
-	}
 	
 }
 
@@ -560,8 +586,5 @@ form textarea {
 		width: 1200px;
 	}
 
-	.container.medium {
-		width: 900px;
-	}
 
 }
