@@ -37,14 +37,25 @@ body {
 	font-weight: 300;
 	font-size: 1.25em;
 	line-height: 1.75em;
-	color: #888;
 	background-color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
 	color: whitesmoke;
 	font-weight: 100;
 	line-height: 1.5em;
+}
+
+h2 {
+	font-weight: 500;
+	font-style: italic;
+	line-height: 1.5em;
+	color: black;
+}
+
+h3 {
+	font-weight: 300;
+	color: black;
 }
 
 strong, b {
@@ -82,9 +93,19 @@ footer {
 	max-width: 1600px;
 }
 
+.header {
+	height: fit-content;
+	padding: 2em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 2em;
+}
+
 /* Buttons */
 
-button, .button {
+button, .btn {
 	-moz-transition: all 0.25s ease-in-out;
 	-webkit-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
@@ -92,14 +113,23 @@ button, .button {
 	-webkit-appearance: none;
 	position: relative;
 	display: inline-block;
-	background: #3d3d3d;
-	padding: 0.85em 3em 0.85em 3em;
-	border-radius: 0.25em;
-	cursor: pointer;
-	border: 0;
-	color: #fff;
 	text-align: center;
 	text-decoration: none;
+	background: transparent;
+	padding: 0.85em 3em;
+	border: 1px #d6d6d6 solid;
+	border-radius: .3em;
+	cursor: pointer;
+	color: #fff;
+	box-shadow: inset 0 0 0 1px #d6d6d6;
+	transition: all .7s ease-in-out;
+}
+
+.btn:hover {
+	background-color: rgba(245, 245, 245, 0.3);
+	color: whitesmoke;
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
 
@@ -125,9 +155,9 @@ button, .button {
         linear-gradient(rgba(0, 70, 255, 0.1), rgba(0, 70, 255, 0.1)), 
         url("images/overlay.png"), 
         url("../../images/Desk-Background.jpg");
-	background-size: cover, auto, cover;
-	background-position: top left, top left, center center;
-	background-repeat: no-repeat, repeat, no-repeat;
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
 	padding: 14em 0 14em 0;
 	text-align: center;
 	color: #fff;
@@ -163,7 +193,27 @@ button, .button {
 
 .about-content {
 	background-image: linear-gradient(45deg, #dce7b6, #dfde79, #f1cd73, #80cdcf);  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 2em;
+	padding: 5em;
+}
 
+.about-content img {
+	width: calc(610*.6px);
+	height: calc(1098*.6px);
+}
+
+.about h3 {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+.about a {
+	margin-top: 2em;
 }
 
 /**********************
@@ -177,8 +227,12 @@ button, .button {
 	background: #e96443;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(-45deg, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(-45deg, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 2em 0;
 }
 
+.my-work h3 {
+	font-size: 2em;
+}
 
 /* Diamond Grid Containers */
 .container-diamonds {
@@ -256,32 +310,29 @@ button, .button {
   
 
 /**********************
-  Events Philosophy Section
+  Events Section
 **********************/
 .events .header {
 	background-color: white;
 }
 
 .events-content {
-	
 	background: #DB2A61;
-background: radial-gradient(at center, #a02478, #DB2A61, #E6C938);
-	
-}
-
-.container-flex {
+	background: radial-gradient(at center, #a02478, #DB2A61, #E6C938);
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	gap: 5em;
-	padding: 1em;
-}
-
-#events .container-flex {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	gap: 10em;
+	gap: 1em;
+	padding: 3em 0;
+}
+
+.events-content h3 {
+	color: whitesmoke;
+	font-size: 1.5em;
+	margin-bottom: 1em;
 }
 
 .aicher-quote {
@@ -296,24 +347,50 @@ background: radial-gradient(at center, #a02478, #DB2A61, #E6C938);
 	gap: 1em;
 }
 
-.container-flex img {
-	width: calc(610*.55px);
-	height: calc(1098*.55px);
-}
 
 /**********************
     Contact Me Section
 **********************/
-.contact-me-content {
+.contact-me {
 	background-color: white;
 }
 
-/* Forms */
-
-form .actions {
-	margin-bottom: 0;
+.contact-me .header {
+	height:fit-content;
+	padding: 2em 0 .5em;
 }
 
+.contact-me p {
+	text-align: center;
+}
+
+.contact-me p:last-child {
+	margin-bottom: 2em;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 2em;
+}
+
+.contact-btns {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.contact-btns .btn {
+	background-color: gray;
+}
+
+.contact-btns .btn:hover {
+	background-color: rgba(245, 245, 245, 0.7);
+	color: black;
+}
+
+/* Form Details*/
 form label {
 	display: block;
 }
@@ -404,16 +481,6 @@ form textarea {
 }
 
 
-/* Container */
-
-
-
-
-
-.container.medium {
-	width: 1020px;
-}
-
 /******************
   Media Queries
 ******************/
@@ -447,15 +514,14 @@ form textarea {
 		width: 100% !important;
 	}
 
-	.container-flex {
-		display: flex;
-		flex-direction: column;
-		gap: 2em;
+	.about-content {
+		flex-direction: row;
+		gap: 5em;
 	}
 
-	.container-flex img {
-		width: calc(610*.6px);
-		height: calc(1098*.6px);
+	.about-content img {
+		width: calc(610*.55px);
+		height: calc(1098*.55px);
 	}
 
 	.grid-container-diamonds {
