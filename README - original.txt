@@ -1,43 +1,60 @@
-Tessellate by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Rainnbow Art Design Website
 
+This is the official website for **Rainnbow Art Design**, a business dedicated to providing high-quality design services. The website was inspired by the **Tessellate** template from [HTML5 UP](https://html5up.net/tessellate), developed and coded by [EleaTech](https://github.com/famanakis).
 
-This is Tessellate, a brand new responsive site template by AJ for HTML5 UP. It's a
-single pager (a format I'm pretty into right now), has styling for a crapload of
-basic elements, and includes a handy "dark" modifier class to flip a given element
-to a light-on-dark color scheme.
+## Overview
 
-Demo images* courtesy of Felicia Simion, a highly creative photographer/artist
-friend of mine over at deviantART. See more of her incredible work here:
+The website is designed to showcase the services and portfolio of **Rainnbow Art Design** in an elegant and modern layout. It is fully responsive and adapts well to different screen sizes.
 
-http://ineedchemicalx.deviantart.com/
+### Features
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
+* **Responsive Design**: Works seamlessly on all devices (desktop, tablet, mobile).
+* **User-friendly Navigation**: Easy to explore services, portfolio, and contact information.
+* **Clean and Modern UI**: Inspired by the *Tessellate* template, offering a fresh and professional design.
+* **Custom Content**: Tailored for Rainnbow Art Design with custom images, text, and branding.
 
-AJ
-aj@lkn.io | @ajlkn
+## Technologies Used
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+* **HTML5**: The structure of the website is built with HTML5.
+* **CSS3**: Styling is handled using CSS3 to ensure a modern and responsive design.
+* **JavaScript**: Used for interactive elements and improved user experience (to be added in the future).
 
+## Template Inspiration
 
-Credits:
+This website was inspired by the **Tessellate** template, originally created by [HTML5 UP](https://html5up.net/). It is a free, fully responsive HTML5/CSS3 site template. The original design is available under a [Creative Commons Attribution 3.0 License](https://html5up.net/license).
 
-	Demo Images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-			"Look for the bare necessities of life" (ineedchemicalx.deviantart.com/art/Look-for-the-bare-necessities-of-life-402262777)
-			"You and I collide" (ineedchemicalx.deviantart.com/art/You-and-I-collide-401457901)
-			"Emperor of the Stars" (ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193)
-			"Sherlockin" (ineedchemicalx.deviantart.com/art/Sherlockin-369847236)
-			"A breath of Hope" (ineedchemicalx.deviantart.com/art/A-breath-of-Hope-366359145)
-			"The Pursuit" (ineedchemicalx.deviantart.com/art/The-Pursuit-355003425)
-			"Cherish" (ineedchemicalx.deviantart.com/art/Cherish-320041163)
-			"Mind is a clear stage" (ineedchemicalx.deviantart.com/art/Mind-is-a-clear-stage-375431607)
+### Original Design Credits
 
-	Icons:
-		Font Awesome (fontawesome.io)
+* **Tessellate Template by HTML5 UP**
+  [https://html5up.net/tessellate](https://html5up.net/tessellate)
+* **Design and Development**: [EleaTech](https://github.com/famanakis)
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## Installation
+
+To use or modify this website, you can download or clone the repository:
+
+```bash
+git clone https://github.com/yourusername/rainbow-designs-website.git
+```
+
+Once downloaded, you can open the `index.html` file in any modern browser to view the website.
+
+## Usage
+
+* Customize the content in the `index.html` file to reflect the branding, services, and details for **Rainbbow Art Design**.
+* Add your images and replace placeholder text to match the business’s offerings.
+* Use the provided CSS and JavaScript files to adjust the styling and interactivity as needed.
+
+## License
+
+This website template is based on the **Tessellate** template from **HTML5 UP**. The license for this project is governed by the terms of the **HTML5 UP License** (Creative Commons Attribution 3.0).
+
+You may use and modify the code for personal or commercial use, but please give appropriate credit to **HTML5 UP** and **EleaTech**.
+
+For more information, see the **LICENSE** file in the repository.
+
+## Contact
+
+If you have any questions or would like to reach out, feel free to contact us:
+
+* Email: [famanakis@gmail.com](mailto:famanakis@gmail.com)
