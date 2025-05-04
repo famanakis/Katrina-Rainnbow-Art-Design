@@ -38,6 +38,8 @@ body {
 	font-size: 1.25em;
 	line-height: 1.75em;
 	background-color: black;
+	min-width: 412px;
+	overflow-x: auto;
 }
 
 h1 {
@@ -391,9 +393,6 @@ button, .btn {
 }
 
 /* Form Details*/
-form label {
-	display: block;
-}
 
 form input[type="text"],
 form input[type="email"],
@@ -588,3 +587,62 @@ form textarea {
 
 
 }
+
+/* Narrow Screens */
+@media (max-width: 650px) {
+
+	.grid-container-diamonds {
+		grid-template-columns: repeat(3, 96px);
+		grid-template-rows: repeat(9, 96px);
+		gap: 0;
+		margin: 0 auto;
+		justify-items: center;
+	}
+
+	.grid-item-diamonds {
+		width: 150px;
+		height: 150px;
+	}
+
+	.btn {
+		padding: 0.85em 2em;
+		font-size: 0.9em; 
+		min-width: 50vw;
+		max-width: 100%; 
+	}
+}
+
+@media (max-width: 399px) {
+
+	body {
+		min-width: 370px;
+	}
+
+	h1, h2, h3, p, a {
+		font-size: 90%;
+	}
+
+	.about-content img {
+		width: 88vw;
+		height: 88vh;
+	}
+
+	.grid-container-diamonds {
+		grid-template-columns: repeat(3, 85px);
+		grid-template-rows: repeat(9, 85px);
+		
+	}
+
+	.grid-item-diamonds {
+		width: 135px;
+		height: 135px;
+	}
+
+	.btn {
+		padding: 0.85em 1.75em;
+	}
+
+}
+  
+  
+  
