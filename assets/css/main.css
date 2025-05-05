@@ -275,8 +275,11 @@ button, .btn {
 	transition: transform 1s ease;
 	z-index: 1;
 	border: 14px solid whitesmoke;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-  
+
 .grid-item-diamonds:hover {
 	transform: rotate(45deg) scale(1.1); /* Grows while keeping the diamond shape */
 	z-index: 10; /* Bring to front on hover */
@@ -284,15 +287,11 @@ button, .btn {
 	cursor: pointer;
 }
   
-.grid-item-diamonds img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	/* width: 170%; */
-	/* height: 170%; */
+.grid-item-diamonds img {	
+	width: 170%;
+	height: 170%;
 	object-fit: cover;
-	/* transform: rotate(-45deg); */
-	transform-origin: center;
+	transform: rotate(-45deg);
 }
   
 /* Assign grid areas */
