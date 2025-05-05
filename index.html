@@ -183,12 +183,14 @@
 		</div>	
 
 		<script>
-			window.addEventListener('load', function () {
-			  setTimeout(function () {
-				window.scrollTo(0, 0);
-			  }, 10);
-			});
+			// Check if returning from thank-you page
+			if (window.location.search.includes('from=thankyou')) {
+			  window.scrollTo(0, 0);
+			  // Optional: remove the query param so it doesn’t persist on refresh
+			  window.history.replaceState({}, document.title, window.location.pathname);
+			}
 		  </script>
+		  
 			
 	
 	</body>
