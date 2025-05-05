@@ -376,6 +376,10 @@ button, .btn {
 	padding: 2em;
 }
 
+.h-captcha {
+	margin-top: 1em;
+}
+
 .contact-btns, .contact-name-email {
 	display: flex;
 	flex-direction: column;
@@ -549,6 +553,10 @@ form textarea {
 		margin: 0 auto;
 		width: 80%;
 		gap: 2em;
+	}
+
+	.h-captcha {
+		margin-top: 2em;
 	}
 
 	.contact-btns, .contact-name-email {
