@@ -124,20 +124,23 @@
 				</div>				
 				<form method="POST" action="https://formsubmit.co/famanakis@gmail.com">
 					<div class="contact-form">
-						<div class="contact-name-email">
-							<div class="name"><input type="text" placeholder="Name" /></div>
-							<div class="email"><input type="text" placeholder="Email" /></div>
-						</div>
-						<div class="message"><textarea name="message" placeholder="Message"></textarea></div>
-						<!-- Hidden Fields -->
-						<input type="hidden" name="_captcha" value="false">
-						<input type="hidden" name="_next" value="https://famanakis.github.io/Katrina-Rainnbow-Art-Design/thank-you.html">
-						<div class="contact-btns">
-							<input class="submit btn" type="submit" value="Send Message" />
-							<input class="clear btn" type="reset" value="Clear Form" />
-						</div>
+					  <div class="contact-name-email">
+						<div class="name"><input type="text" name="name" placeholder="Name" required /></div>
+						<div class="email"><input type="email" name="email" placeholder="Email" required /></div>
+					  </div>
+					  <div class="message"><textarea name="message" placeholder="Message" required></textarea></div>
+					  
+					  <!-- Hidden Fields -->
+					  <input type="hidden" name="_captcha" value="false">
+					  <input type="hidden" name="_next" value="https://famanakis.github.io/Katrina-Rainnbow-Art-Design/thank-you.html">
+					  
+					  <div class="contact-btns">
+						<input class="submit btn" type="submit" value="Send Message" />
+						<input class="clear btn" type="reset" value="Clear Form" />
+					  </div>
 					</div>
-				</form>
+				  </form>
+				  
 			</section>
 	
 			<!-- Footer -->
