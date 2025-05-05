@@ -125,7 +125,14 @@
 				<form action="https://api.web3forms.com/submit" method="POST">
 					<!-- Hidden Fields -->
 					<input type="hidden" name="access_key" value="4a9ce29f-e1a3-4d33-8af0-4b720e4f433e">
-
+					<input type="hidden" name="subject" value="New Connection Request">
+					<input type="hidden" name="from_name" value="Rainnbow Art Design Website">
+					<div class="h-captcha" data-captcha="true"></div>
+					<!-- Honeypot Spam Protection -->
+					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+					<!-- Custom Confirmation for Submission -->
+					<input type="hidden" name="redirect" value="https://famanakis.github.io/Katrina-Rainnbow-Art-Design/thank-you.html">
+					
 					<div class="contact-form">
 					  	<div class="contact-name-email">
 							<div class="name">
@@ -138,11 +145,6 @@
 						<div class="message">
 							<textarea name="message" placeholder="Message" required></textarea>
 						</div>
-						<!-- Honeypot Spam Protection -->
-						<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-						<!-- Custom Confirmation for Submission -->
-						<input type="hidden" name="redirect" value="https://famanakis.github.io/Katrina-Rainnbow-Art-Design/thank-you.html">
-						
 						<div class="contact-btns">
 							<input class="submit btn" type="submit" value="Send Message" />
 							<input class="clear btn" type="reset" value="Clear Form" />
@@ -163,6 +165,6 @@
 				</div>
 			</footer>
 		</div>	
-
+	<script src="https://web3forms.com/client/script.js" async defer></script>
 	</body>
 </html>
