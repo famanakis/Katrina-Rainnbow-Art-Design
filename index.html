@@ -122,11 +122,11 @@
 					<p>Please contact me with any questions, comments, suggestions, or just to say hello!</p>
 					<p>I appreciate any possible opportunities to collaborate with you on a new project.</p>
 				</div>				
-				<form action="https://api.web3forms.com/submit" method="POST">
+				<form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 					<!-- Hidden Fields -->
 					<input type="hidden" name="access_key" value="4a9ce29f-e1a3-4d33-8af0-4b720e4f433e">
 					<input type="hidden" name="subject" value="New Connection Request">
-					<input type="hidden" name="from_name" value="Rainnbow Art Design Website">
+					<input type="hidden" name="from_name" value="RAD Website Notification">
 					<!-- Honeypot Spam Protection -->
 					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 					<!-- Custom Confirmation for Submission -->
@@ -168,5 +168,19 @@
 		</div>	
 		<!-- Script for hCaptcha-->
 		<script src="https://web3forms.com/client/script.js" async defer></script>
+		<script>
+			const form = document.getElementById('contact-form');
+			
+			form.addEventListener('submit', function(e) {
+			
+				const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+			
+				if (!hCaptcha) {
+					e.preventDefault();
+					alert("Please fill out captcha field")
+					return
+				}
+			});
+			</script>
 	</body>
 </html>
