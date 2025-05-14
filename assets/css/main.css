@@ -30,10 +30,18 @@ input, select, textarea {
   General Format
 *******************/
 /* Text */
+/* Adobe Font Families
+	font-family: fredericka-the-greatest, serif;  font-weights: 400;
+	font-family: soda-script, sans-serif; font-weights: 400, 700;
+	font-family: sail, sans-serif; font-weights: 400;
+	font-family: itc-american-typewriter-cond, serif; font-weights: 300, 500, 700;
+	font-family: itc-american-typewriter, serif; font-weights: 300, 500, 700; font-styles: normal or italic;
+	font-family: raleway, sans-serif; font-weights: 100, 200, 300, 400, 500, 600, 700, 800, 900; font-styles: normal or italic;
+ */
 
 body {
 	line-height: 1;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: itc-american-typewriter, serif;
 	font-weight: 300;
 	font-size: 1.25em;
 	line-height: 1.75em;
@@ -46,11 +54,15 @@ h1 {
 	color: whitesmoke;
 	font-weight: 100;
 	line-height: 1.5em;
+	font-family: fredericka-the-greatest, serif;
+	font-weight: 400;
+	font-style: normal;
+
 }
 
 h2 {
-	font-weight: 500;
-	font-style: italic;
+	font-family: sail, sans-serif;
+	font-weight: 400;
 	line-height: 1.5em;
 	color: black;
 }
@@ -146,6 +158,14 @@ button, .btn {
 	background-color: white;
 }
 
+.nav-logo {
+	height: 2em;
+}
+
+.nav-list li:hover {
+	font-weight: 500;
+}
+
 /**********************
      Hero Section
 **********************/
@@ -167,8 +187,10 @@ button, .btn {
 
 .hero h1 {
 	font-size: 2.25em;
+	font-weight: 500;
 	line-height: 1.25em;
 	margin-bottom: 1em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero .header p {
@@ -250,7 +272,9 @@ button, .btn {
 	display: grid;
 	grid-template-columns: repeat(3, 103px);
 	grid-template-rows: repeat(9, 103px);
-	gap: 2.65em;
+	/* For no space between diamonds */
+	/* gap: 2.65em; */
+	gap: 3.5em;
 	grid-template-areas:
 	". a ."
 	"b . c"
@@ -274,7 +298,7 @@ button, .btn {
 	position: relative;
 	transition: transform 1s ease;
 	z-index: 1;
-	border: 14px solid whitesmoke;
+	border: 12px solid whitesmoke;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -288,8 +312,8 @@ button, .btn {
 }
   
 .grid-item-diamonds img {	
-	width: 170%;
-	height: 170%;
+	width: 142%;
+	height: 142%;
 	object-fit: cover;
 	transform: rotate(-45deg);
 }
@@ -337,6 +361,10 @@ button, .btn {
 }
 
 .aicher-quote {
+	font-family: soda-script, sans-serif;
+	font-size: 2em;
+	letter-spacing: .15em;
+	line-height: 1.5em;
 	text-align: center;
 }
 
@@ -529,7 +557,9 @@ form textarea {
 	.grid-container-diamonds {
 		grid-template-columns: repeat(6, 155px);
 		grid-template-rows: repeat(5, 155px);
-		gap: 0;
+		/* For no space between diamonds */
+		/* gap: 0; */
+		gap: 1.5em;
 		grid-template-areas:
 		"a   a   b   b   c   c"
 		".   d   d   e   e   ."
@@ -537,6 +567,10 @@ form textarea {
 		".   i   i   j   j   ."
 		"k   k   l   l   m   m";
 		margin: 2em 0 2em 4em;
+	}
+
+	.grid-item-diamonds {
+		border: 14px solid whitesmoke;
 	}
 
 	.events-content {
@@ -601,7 +635,9 @@ form textarea {
 	.grid-container-diamonds {
 		grid-template-columns: repeat(3, 96px);
 		grid-template-rows: repeat(9, 96px);
-		gap: 0;
+		/* For no space between diamonds */
+		/* gap: 0; */
+		gap: 1em;
 		margin: 0 auto;
 		justify-items: center;
 	}
@@ -609,6 +645,7 @@ form textarea {
 	.grid-item-diamonds {
 		width: 150px;
 		height: 150px;
+		border: 10px solid whitesmoke;
 	}
 
 	.btn {
