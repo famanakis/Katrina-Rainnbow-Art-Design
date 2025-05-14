@@ -177,10 +177,10 @@ button, .btn {
 	margin: 0 auto;
 	background-image: 
         linear-gradient(rgba(0, 70, 255, 0.1), rgba(0, 70, 255, 0.1)), 
-        url("images/overlay.png"), 
-        url("../../images/Desk-Background.jpg");
+        url("../../images/Desk-Background.jpg"),
+		url("../../images/default-background.jpeg");
 	background-size: cover;
-	background-position: right;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	padding: 14em 0 14em 0;
 	text-align: center;
@@ -191,7 +191,7 @@ button, .btn {
 	font-size: 2.25em;
 	font-weight: 500;
 	line-height: 1.25em;
-	margin-bottom: 1em;
+	margin: 1.5em auto .5em;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -266,7 +266,6 @@ button, .btn {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 7em;
 	padding: 2em;
 }
   
@@ -287,7 +286,7 @@ button, .btn {
 	". j ."
 	"k . l"
 	". m .";
-	margin: 3em 6.75em 3em 0;
+	margin: 10em 6.75em 10em 0;
 	justify-content: center;
 	align-items: center;
 }
@@ -334,6 +333,20 @@ button, .btn {
 .k { grid-area: k; }
 .l { grid-area: l; }
 .m { grid-area: m; }
+
+.visit-store {
+	font-size: 1.5em;
+	margin-bottom: 2em;
+}
+
+.my-work a:hover {
+	font-weight: 500;
+	color: white;
+}
+
+.events-btn {
+	margin-bottom: ;
+}
   
 
 /**********************
@@ -546,6 +559,10 @@ form textarea {
 		width: 100% !important;
 	}
 
+	.hero  a {
+		margin-bottom: 3em;
+	}
+
 	.about-content {
 		flex-direction: row;
 		gap: 5em;
@@ -568,7 +585,7 @@ form textarea {
 		"f   f   g   g   h   h"
 		".   i   i   j   j   ."
 		"k   k   l   l   m   m";
-		margin: 2em 0 2em 4em;
+		margin: 9em 0 9em 4em;
 	}
 
 	.grid-item-diamonds {
@@ -634,13 +651,17 @@ form textarea {
 /* Narrow Screens */
 @media (max-width: 650px) {
 
+	.hero h1 {
+		max-width: 320px;
+	}
+
 	.grid-container-diamonds {
 		grid-template-columns: repeat(3, 96px);
 		grid-template-rows: repeat(9, 96px);
 		/* For no space between diamonds */
 		/* gap: 0; */
 		gap: 1em;
-		margin: 0 auto;
+		margin: 5em auto;
 		justify-items: center;
 	}
 
