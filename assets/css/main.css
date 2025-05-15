@@ -306,17 +306,17 @@ button, .btn {
 }
 
 .grid-item-diamonds:hover {
-	transform: rotate(45deg) scale(1.1); /* Grows while keeping the diamond shape */
+	transform: rotate(45deg) scale(1.2); /* Grows while keeping the diamond shape */
 	z-index: 10; /* Bring to front on hover */
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 }
   
-.grid-item-diamonds img {	
+.grid-item-diamonds .img {	
 	width: 142%;
 	height: 142%;
 	object-fit: cover;
-	transform: rotate(-45deg);
+	transform: translate(-15%, 2%) rotate(-45deg);
 }
   
 /* Assign grid areas */
@@ -523,6 +523,13 @@ form textarea {
 	color: whitesmoke;
 	cursor: pointer;
 	transform: scale(1.1);
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-etsy {
+	padding-top: .5em;
+	padding-left: .1em;
 }
 
 
