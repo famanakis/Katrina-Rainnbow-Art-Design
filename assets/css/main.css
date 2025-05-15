@@ -528,6 +528,9 @@ form textarea {
 	padding-left: .1em;
 }
 
+.copyright a:hover {
+	color: white;
+}
 
 /******************
   Media Queries
