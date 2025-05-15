@@ -7,15 +7,16 @@
 		<title>Katrina Rainnbow Art Design</title>
 		<!-- Preconnect & Preload Adobe Fonts -->
 		<link rel="preconnect" href="https://use.typekit.net" crossorigin>
-		<link rel="preload" as="style" href="https://use.typekit.net/hjz2dsc.css">
+		<!-- <link rel="preload" as="style" href="https://use.typekit.net/hjz2dsc.css"> -->
+		<link rel="preload" href="https://use.typekit.net/path-to-fredericka.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="stylesheet" href="https://use.typekit.net/hjz2dsc.css">
-		<!-- Preload the actual hero background image -->
+		<!-- Preload hero background image -->
 		<link rel="preload" href="images/Desk-Background-Small.webp" as="image" type="image/webp">
 		<!-- Preload H1 Text Inline Style -->
 		<style>
 			.hero h1 {
 				color: whitesmoke;
-				font-family: fredericka-the-greatest, serif;
+				font-family: fredericka-the-greatest, George, serif;
 				font-style: normal;
 				font-size: 2.25em;
 				font-weight: 500;
@@ -24,20 +25,22 @@
 				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 			}
 		</style>
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+		 <!-- Non-Blocking Main CSS -->
+    	<link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
 		<!-- DNS Prefetch for Font Awesome -->
-		<link rel="dns-prefetch" href="https://kit.fontawesome.com">
+		<!-- <link rel="dns-prefetch" href="https://kit.fontawesome.com"> -->
 		<!-- Preconnect to Font Awesome for faster loading -->
-		<link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+		<!-- <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin> -->
 		<!-- Font Awesome -->
-		<script src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>
+		<script defer src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body id="top">
 		<div class="container">
 			<!-- Navigation -->
 			<nav class="nav-bar">
-				<img class="nav-logo" src="images/Logo.webp" alt="Rainnbow Art Design Logo">
+				<img class="nav-logo" src="images/Logo.webp" alt="Rainnbow Art Design Logo" loading="lazy">
 				<ul class="nav-list">
 					<li><a href="#about" aria-label="Read more about the artist">About</a></li>
 					<li><a href="#myWork" aria-label="View samples of my artistic work">My Work</a></li>
