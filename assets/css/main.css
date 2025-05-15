@@ -168,6 +168,7 @@ button, .btn {
 
 .nav-logo {
 	height: 2em;
+	width: auto;
 }
 
 .nav-list li:hover {
