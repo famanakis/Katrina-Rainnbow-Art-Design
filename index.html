@@ -1,38 +1,86 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Discover unique artwork, prints, canvas, and custom T-shirts by a premier Albuquerque artist. Shop local, handcrafted designs for your home or wardrobe. Order now!">
-		<title>Katrina Rainnbow Art Design</title>
-		<link rel="preload" href="images/Desk-Background.webp" as="image">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="canonical" href=""/>
-		<!-- Adobe Fonts Client Link -->
-		<link rel="stylesheet" href="https://use.typekit.net/hjz2dsc.css">
-		<script src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>	
-	</head>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Discover unique artwork, prints, canvas, and custom T-shirts by a premier Albuquerque artist. Shop local, handcrafted designs for your home or wardrobe. Order now!">
+	<title>Katrina Rainnbow Art Design</title>
 
-	<body id="top">
-		<div class="container">
-			<!-- Navigation -->
-			<nav class="nav-bar">
-				<img class="nav-logo" src="images/Logo.webp" alt="Rainnbow Art Design Logo">
-				<ul class="nav-list">
-					<li><a href="#about" aria-label="Read more about the artist">About</a></li>
-					<li><a href="#myWork" aria-label="View samples of my artistic work">My Work</a></li>
-					<li><a href="#events" aria-label="View upcoming events the artist well be attending">Events</a></li>
-					<li><a href="#contact" aria-label="Learn how to contact the artist directly">Contact</a></li>
-					<li><a href="https://www.etsy.com/shop/rainnbowartndesign" aria-label="View items in the artist's online store">My Store</a></li>
-				</ul>
-				</nav>
-	
-			<!-- Hero -->
-			<section id="hero" class="hero">
-				<h1>Rainbow Art & Design</h1>
-				<p>~ graphic designer & artist ~</a></p>
-				<a href="#about" class="btn" aria-label="down to first section about the artist"><i class="fa-solid fa-chevron-down"></i></a>
-			</section>
+	<!-- Preconnect & Preload Adobe Fonts -->
+	<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+	<link rel="preload" as="style" href="https://use.typekit.net/hjz2dsc.css">
+	<link rel="stylesheet" href="https://use.typekit.net/hjz2dsc.css">
+
+	<!-- Preload hero background image (correct one) -->
+	<link rel="preload" href="images/Desk-Background-Small.webp" as="image" type="image/webp">
+
+	<!-- Inline critical CSS -->
+	<style>
+		body {
+			font-family: itc-american-typewriter, serif;
+			font-weight: 300;
+			font-size: 1.25em;
+			line-height: 1.75em;
+			letter-spacing: .1em;
+			background-color: black;
+			color: whitesmoke;
+			margin: 0;
+			padding: 0;
+		}
+
+		.hero {
+			padding: 14em 0;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.3);
+			background-image:
+				linear-gradient(rgba(0, 70, 255, 0.1), rgba(0, 70, 255, 0.1)),
+				url('images/Desk-Background-Small.webp');
+			background-size: cover;
+			background-position: bottom;
+			background-repeat: no-repeat;
+			color: #fff;
+		}
+
+		.hero h1 {
+			font-family: fredericka-the-greatest, serif;
+			font-size: 2.25em;
+			font-weight: 500;
+			line-height: 1.25em;
+			margin: 1.5em auto 0.5em;
+			color: whitesmoke;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		}
+	</style>
+
+	<!-- Defer full CSS -->
+	<link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="top">
+	<div class="container">
+		<!-- Navigation -->
+		<nav class="nav-bar">
+			<img class="nav-logo" src="images/Logo.webp" alt="Rainnbow Art Design Logo">
+			<ul class="nav-list">
+				<li><a href="#about" aria-label="Read more about the artist">About</a></li>
+				<li><a href="#myWork" aria-label="View samples of my artistic work">My Work</a></li>
+				<li><a href="#events" aria-label="View upcoming events the artist well be attending">Events</a></li>
+				<li><a href="#contact" aria-label="Learn how to contact the artist directly">Contact</a></li>
+				<li><a href="https://www.etsy.com/shop/rainnbowartndesign" aria-label="View items in the artist's online store">My Store</a></li>
+			</ul>
+		</nav>
+
+		<!-- Hero -->
+		<section id="hero" class="hero">
+			<h1>Rainbow Art & Design</h1>
+			<p>~ graphic designer & artist ~</p>
+			<a href="#about" class="btn" aria-label="down to first section about the artist"><i class="fa-solid fa-chevron-down"></i></a>
+		</section>
+
 	
 			<!-- About Me -->
 			<section id="about" class="about">
