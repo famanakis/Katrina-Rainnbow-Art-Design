@@ -160,7 +160,7 @@ button, .btn {
 .nav-bar {
 	display: none;
 	margin: 0 auto;
-	height: 60px; 	
+	min-height: 60px; 	
 	width: 100%;
 	max-width: 1600px;
 	background-color: white;
