@@ -7,56 +7,81 @@
 		<title>Katrina Rainnbow Art Design</title>
 		<!-- Preconnect & Preload Adobe Fonts -->
 		<link rel="preconnect" href="https://use.typekit.net" crossorigin>
-		<!-- <link rel="preload" as="style" href="https://use.typekit.net/hjz2dsc.css"> -->
 		<link rel="preload" href="https://use.typekit.net/path-to-fredericka.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" as="style" href="https://use.typekit.net/hjz2dsc.css">
 		<link rel="stylesheet" href="https://use.typekit.net/hjz2dsc.css">
-		<!-- Preload hero background image -->
-		<link rel="preload" href="images/Desk-Background-Small.webp" as="image" type="image/webp">
-		<!-- Preload H1 Text Inline Style -->
+		<!-- Preload Hero Background Image -->
+		<link rel="preload" href="images/Desk-Background-Mobile.webp" as="image" type="image/webp" media="(max-width: 767px)">
+		<link rel="preload" href="images/Desk-Background-Small.webp" as="image" type="image/webp" media="(min-width: 768px)">
+		<!-- Inline Critical CSS -->
 		<style>
-			.hero h1 {
-				color: whitesmoke;
-				font-family: fredericka-the-greatest, George, serif;
-				font-style: normal;
-				font-size: 2.25em;
-				font-weight: 500;
-				line-height: 1.25em;
-				margin: 1.5em auto .5em;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		.hero {
+			background-image: url('images/Desk-Background-Mobile.webp');
+			background-size: cover;
+			background-position: center;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		@media (min-width: 768px) {
+			.hero {
+			background-image: url('images/Desk-Background-Small.webp');
 			}
+		}
+		.hero h1 {
+			color: whitesmoke;
+			font-family: 'fredericka-the-greatest', Georgia, serif;
+			font-style: normal;
+			font-size: 2.25em;
+			font-weight: 500;
+			line-height: 1.25em;
+			margin: 1.5em auto .5em;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		}
+		.hero p {
+			color: white;
+			font-size: 1.2em;
+			margin: 0.5em 0;
+		}
+		.hero .btn {
+			display: inline-block;
+			padding: 0.5em;
+			color: white;
+			text-decoration: none;
+		}
 		</style>
-		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-		 <!-- Non-Blocking Main CSS -->
-    	<link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
-		<!-- DNS Prefetch for Font Awesome -->
-		<!-- <link rel="dns-prefetch" href="https://kit.fontawesome.com"> -->
-		<!-- Preconnect to Font Awesome for faster loading -->
-		<!-- <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin> -->
-		<!-- Font Awesome -->
+		<!-- Non-Blocking Main CSS -->
+		<link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
+		<!-- Deferred Font Awesome (or remove if using SVG) -->
 		<script defer src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>
 	</head>
-
 	<body id="top">
 		<div class="container">
-			<!-- Navigation -->
-			<nav class="nav-bar">
-				<img class="nav-logo" src="images/Logo.webp" alt="Rainnbow Art Design Logo" loading="lazy">
-				<ul class="nav-list">
-					<li><a href="#about" aria-label="Read more about the artist">About</a></li>
-					<li><a href="#myWork" aria-label="View samples of my artistic work">My Work</a></li>
-					<li><a href="#events" aria-label="View upcoming events the artist well be attending">Events</a></li>
-					<li><a href="#contact" aria-label="Learn how to contact the artist directly">Contact</a></li>
-					<li><a href="https://www.etsy.com/shop/rainnbowartndesign" aria-label="View items in the artist's online store">My Store</a></li>
-				</ul>
-			</nav>
+		<!-- Navigation -->
+		<nav class="nav-bar">
+			<img class="nav-logo" src="images/Logo.webp" alt="Rainnbow Art Design Logo" loading="lazy">
+			<ul class="nav-list">
+			<li><a href="#about" aria-label="Read more about the artist">About</a></li>
+			<li><a href="#myWork" aria-label="View samples of my artistic work">My Work</a></li>
+			<li><a href="#events" aria-label="View upcoming events the artist will be attending">Events</a></li>
+			<li><a href="#contact" aria-label="Learn how to contact the artist directly">Contact</a></li>
+			<li><a href="https://www.etsy.com/shop/rainnbowartndesign" aria-label="View items in the artist's online store">My Store</a></li>
+			</ul>
+		</nav>
+		<!-- Hero -->
+		<section id="hero" class="hero">
+			<h1>Rainbow Art & Design</h1>
+			<p>~ graphic designer & artist ~</p>
+			<a href="#about" class="btn" aria-label="down to first section about the artist">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<path d="M6 9l6 6 6-6"/>
+			</svg>
+			</a>
+		</section>
 
-			<!-- Hero -->
-			<section id="hero" class="hero">
-				<h1>Rainbow Art & Design</h1>
-				<p>~ graphic designer & artist ~</p>
-				<a href="#about" class="btn" aria-label="down to first section about the artist"><i class="fa-solid fa-chevron-down"></i></a>
-			</section>
-	
 			<!-- About Me -->
 			<section id="about" class="about">
 				<div class="header">
