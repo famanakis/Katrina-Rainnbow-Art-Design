@@ -175,10 +175,11 @@ button, .btn {
 	position: relative;
 	max-width: 1600px;
 	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.3);
 	background-image: 
         linear-gradient(rgba(0, 70, 255, 0.1), rgba(0, 70, 255, 0.1)), 
-        url("../../images/Desk-Background.jpg"),
-		url("../../images/default-background.jpeg");
+        url("../../images/Desk-Background.webp"),
+		url("../../images/default-background.webp");
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
