@@ -249,21 +249,34 @@
 				</div>
 			</footer>
 		</div>	
-		<!-- Script for hCaptcha-->
-		<script src="https://web3forms.com/client/script.js" async defer></script>
+		<!-- Lazy-load the Web3Forms script -->
 		<script>
+		window.addEventListener('load', function () {
+			const script = document.createElement('script');
+			script.src = "https://web3forms.com/client/script.js";
+			script.async = true;  // This ensures the script loads asynchronously
+			document.body.appendChild(script);
+		});
+		</script>
+
+		<!-- Your custom form validation and logic -->
+		<script>
+		document.addEventListener("DOMContentLoaded", function () {
 			const form = document.getElementById('contact-form');
 			
-			form.addEventListener('submit', function(e) {
-			
-				const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-			
+			if (form) {
+			form.addEventListener('submit', function (e) {
+				const hCaptcha = form.querySelector('textarea[name="h-captcha-response"]').value;
+				
 				if (!hCaptcha) {
-					e.preventDefault();
-					alert("Please fill out captcha field")
-					return
+				e.preventDefault();
+				alert("Please fill out captcha field");
+				return;
 				}
 			});
-			</script>
+			}
+		});
+		</script>
+
 	</body>
 </html>
