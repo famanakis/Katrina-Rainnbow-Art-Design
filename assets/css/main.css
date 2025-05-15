@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'fredericka-the-greatest';
+  src: url('path-to-font') format('woff2');
+  font-display: swap;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -53,12 +59,10 @@ body {
 
 h1 {
 	color: whitesmoke;
-	font-weight: 100;
-	line-height: 1.5em;
+	line-height: 1.25em;
 	font-family: fredericka-the-greatest, serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
-
 }
 
 h2 {
